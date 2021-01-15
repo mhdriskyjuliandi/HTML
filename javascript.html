@@ -1,0 +1,48 @@
+<html>
+<head>
+<title> Program Grade Nilai di Javascript</title>
+<script>alert("Selamat datang di program grade nilai sederhana.")</script>
+<script type="text/javascript">
+ function x()
+ {
+ var nt,np,hasil;
+ nt=document.forms[0].nt.value;
+ hasil=nt*1 
+ document.forms[0].nt.value=hasil;
+ if(hasil<50)
+ ket="E";
+ else if (hasil<60)
+ ket="D";
+ else if (hasil<70)
+ ket="C";
+ else if (hasil<85)
+ ket="B";
+ else if (hasil<=100 && hasil>=85)
+ ket="A";
+ else
+ ket="Input Salah >> 0-100";
+ document.forms[0].nh.value=ket;
+ }
+ 
+</script>
+</head>
+<body>
+<table>
+ <form>
+ <h1>Latihan Statment IF</h1>
+ <tr>
+ <label><td>Nilai Teori</td></label>
+ <td><input type="text" name=nt /></td>
+ </tr> 
+ <tr>
+ <label><td>Nilai Huruf</td></label>
+ <td><input type="text" name=nh /></td>
+ </tr>
+ <tr>
+ <td><input type="button" value="Hasil" onClick="x()" /></td>
+ </tr>
+ </form>
+</table>
+<br />
+</body>
+</html>
